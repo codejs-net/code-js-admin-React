@@ -1,6 +1,7 @@
+![alt text](https://code-js.net/template/code_js_admin_react/Code-js.png)
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project [Create React App](https://github.com/codejs-net/code-js-admin-React).
 
 ## Available Scripts
 
