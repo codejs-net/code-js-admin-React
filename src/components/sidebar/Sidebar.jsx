@@ -47,13 +47,14 @@ const Sidebar = ({classes, open, handleDrawerClose }) => {
         paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose)
       }}
       open={open}
+      
     >
       <div className={classes.toolbarIcon}>
         <h2 className={classes.logo} spacing={2}>CodeJS&nbsp;</h2>
-        <Avatar size={40}  src="src/assets/img/user.png"/>
+        <Avatar size={40}  src="/logo.png"/>
         <div className={classes.toolbarIconColse}>
-        <IconButton onClick={handleDrawerClose}>
-          <ChevronLeftIcon />
+        <IconButton onClick={handleDrawerClose} className={classes.IconColse}>
+          <MenuIcon />
         </IconButton>
         </div>
       </div>
@@ -71,7 +72,7 @@ const Sidebar = ({classes, open, handleDrawerClose }) => {
             // classes={classes.Item }
             className={classes.Item }
           >
-            <ListItemIcon>{item.icon}</ListItemIcon>
+            <ListItemIcon className={classes.listItem }>{item.icon}</ListItemIcon>
             <ListItemText primary={item.label}/>
             {subOpen[item.key] ? <ArrowDropDownIcon /> : <ArrowRightIcon />}
           </ListItem>
@@ -89,7 +90,7 @@ const Sidebar = ({classes, open, handleDrawerClose }) => {
                   classes={{ selected: classes.selected }}
                   className={classes.ItemNested }
                 >
-                  <ListItemIcon>{subitem.icon}</ListItemIcon>
+                  <ListItemIcon className={classes.listItem }>{subitem.icon}</ListItemIcon>
                   <ListItemText primary={subitem.label}/>
                 </ListItem>
                 ))}

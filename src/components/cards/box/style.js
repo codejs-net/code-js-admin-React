@@ -9,7 +9,7 @@ export const BoxCardsStyles = (theme) => ({
     color: theme.palette.primary.main,
   },
   topRow: {
-    height: "15vh",
+    height: "12vh",
     display: "flex",
     justifyContent: "space-between",
     padding: theme.spacing(1),
@@ -28,7 +28,7 @@ export const BoxCardsStyles = (theme) => ({
     flexDirection: "row",
     alignItems: "center",
     padding: theme.spacing(1),
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
   },
   green: {
     color: theme.palette.text.green,
@@ -37,5 +37,28 @@ export const BoxCardsStyles = (theme) => ({
   red: {
     color: theme.palette.text.red,
     fontSize: "1.5rem",
+  },
+  blue: {
+    color:"#0091D5",
+    fontSize: "1.5rem",
+  },
+  dark: {
+    color:"#202020",
+    fontSize: "1.5rem",
+  },
+  value:{
+    color:"#fefefe",
+  },
+  box1:{
+    background:"#1AC9E6"
+  },
+  box2:{
+    background:"#EB548C"
+  },
+  box3:{
+    background:"#DBAE58"
+  },
+  box4:{
+    background:"#B3C100"
   },
 });

@@ -21,7 +21,7 @@ import {
   Search as SearchIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
-
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import LocalCafeRoundedIcon from "@material-ui/icons/LocalCafeRounded";
 import { AuthContext } from '../../context/AuthContext';
 
@@ -34,6 +34,7 @@ const TopAppBar = ({ open, handleDrawerOpen ,history}) => {
   return (
     <AppBar
       position="absolute"
+      // boxShadow={3}
       className={clsx(classes.appBar, open && classes.appBarShift)}
     >
       <Toolbar className={classes.toolbar}>
@@ -53,13 +54,13 @@ const TopAppBar = ({ open, handleDrawerOpen ,history}) => {
           noWrap
           className={classes.title}
         >
-          ElectionS
+          Application
         </Typography>
-        <IconButton color="inherit">
+        {/* <IconButton color="inherit">
           <Badge badgeContent={4} color="secondary">
             <LocalCafeRoundedIcon />
           </Badge>
-        </IconButton>
+        </IconButton> */}
         <IconButton
           aria-haspopup="true"
           color="inherit"
@@ -68,6 +69,8 @@ const TopAppBar = ({ open, handleDrawerOpen ,history}) => {
           onClick={e => setProfileMenu(e.currentTarget)}
         >
           <AccountIcon classes={{ root: classes.headerIcon }} />
+          <ArrowDropDownIcon/>
+
         </IconButton>
         <AuthContext.Consumer>
         {

@@ -18,11 +18,11 @@ const StatCards = () => {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper,classes.box1}>
             <div className={classes.topRow}>
               <div>
                 <Typography variant="button">Total Visitors</Typography>
-                <Typography variant="h4">1,264</Typography>
+                <Typography variant="h4" className={classes.value}>1,264</Typography>
               </div>
               <div className={classes.icon}>
                 <PeopleOutlineIcon fontSize="large" />
@@ -32,17 +32,17 @@ const StatCards = () => {
             <div className={classes.bottomRow}>
               <ArrowUpwardIcon className={classes.green} />
               <Typography variant="body2">
-                &nbsp;<span className={classes.green}>17%</span> to last month
+                &nbsp;<span className={classes.blue}>17%</span> to last month
               </Typography>
             </div>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper ,classes.box2}>
             <div className={classes.topRow}>
               <div>
                 <Typography variant="button">Average Bill</Typography>
-                <Typography variant="h4">$7.38</Typography>
+                <Typography variant="h4" className={classes.value}>$7.38</Typography>
               </div>
               <div className={classes.icon}>
                 <LocalAtmIcon fontSize="large" />
@@ -58,11 +58,11 @@ const StatCards = () => {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper,classes.box3}>
             <div className={classes.topRow}>
               <div>
                 <Typography variant="button">Net Profit</Typography>
-                <Typography variant="h4">$2,390</Typography>
+                <Typography variant="h4" className={classes.value}>$2,390</Typography>
               </div>
               <div className={classes.icon}>
                 <MoneyIcon fontSize="large" />
@@ -72,17 +72,17 @@ const StatCards = () => {
             <div className={classes.bottomRow}>
               <ArrowUpwardIcon fontSize="small" className={classes.green} />
               <Typography variant="body2">
-                &nbsp;<span className={classes.green}>2.3%</span> to last month
+                &nbsp;<span className={classes.dark}>2.3%</span> to last month
               </Typography>
             </div>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper ,classes.box4}>
             <div className={classes.topRow}>
               <div>
                 <Typography variant="button">IG Followers</Typography>
-                <Typography variant="h4">3.287</Typography>
+                <Typography variant="h4" className={classes.value}>3.287</Typography>
               </div>
               <div className={classes.icon}>
                 <GroupAddIcon fontSize="large" />
@@ -92,7 +92,7 @@ const StatCards = () => {
             <div className={classes.bottomRow}>
               <ArrowUpwardIcon fontSize="small" className={classes.green} />
               <Typography variant="body2">
-                &nbsp;<span className={classes.green}>78</span> to last month
+                &nbsp;<span className={classes.blue}>78</span> to last month
               </Typography>
             </div>
           </Paper>

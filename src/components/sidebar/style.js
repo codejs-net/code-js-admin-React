@@ -10,25 +10,33 @@ export const sidebarStyles = theme => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-end",
-    padding: "0 8px",
-    // backgroundColor: `${theme.palette.primary.main} !important`,
+    padding: "0px",
+    // borderBottom: "2px solid #d6d6d6",
+    backgroundColor:theme.palette.background.darkbg,
+    color:theme.palette.text.white,
     ...theme.mixins.toolbar
   },
   toolbarIconColse: {
     padding: "0 20px",
+    color:theme.palette.text.white,
+  },
+  IconColse: {
+    color:theme.palette.text.white,
   },
 
   drawerPaper: {
     position: "relative",
-    whiteSpace: "nowrap",
+    // whiteSpace: "nowrap",
+    color:theme.palette.text.white,
     width: drawerWidth,
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen
     }),
-    // backgroundColor: theme.palette.background.default
-    background: 'rgb(245,249,255)',
-    background: 'linear-gradient(90deg, rgba(245,249,255,1) 4%, rgba(253,253,255,1) 77%)'
+    backgroundColor: theme.palette.background.darkbg,
+    border:"none"
+    // background: 'rgb(245,249,255)',
+    // background: 'linear-gradient(90deg, rgba(245,249,255,1) 4%, rgba(253,253,255,1) 77%)'
   },
   drawerPaperClose: {
     overflowX: "hidden",
@@ -44,17 +52,20 @@ export const sidebarStyles = theme => ({
 
   ItemNested: {
     "&:hover": {
-     backgroundColor: `${theme.palette.primary.main} !important`,
-      color: "white",
+     backgroundColor: `${theme.palette.background.deepDarkBg} !important`,
+     color:theme.palette.text.white,
     },
     "& .MuiListItemText-primary": {
       fontSize:"14px",
     },
   },
+  listItem:{
+    color:theme.palette.text.white,
+  },
   Item: {
     "&:hover": {
-     backgroundColor: `${theme.palette.primary.main} !important`,
-      color: "white",
+     backgroundColor: `${theme.palette.background.deepDarkBg} !important`,
+     color:theme.palette.text.white,
     },
     "& .MuiListItemText-primary": {
       fontSize:"14px",
@@ -65,12 +76,12 @@ export const sidebarStyles = theme => ({
 
   selected: {
     backgroundColor: `${theme.palette.background.selectitem} !important`,
-    color: "black",
+    color:theme.palette.text.white,
     // fontWeight:500
   },
 
   logo:{
-    color:"#3f84f2",
+    color:theme.palette.text.white,
     marginRight:"5px",
     fontFamily: 'Playfair'
   },

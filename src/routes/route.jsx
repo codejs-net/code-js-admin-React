@@ -1,7 +1,7 @@
 export const Home = "/";
 export const Dashboard = "dashboard";
-export const Province = "/provinces";
-export const ProvinceAdd = "/provincesAdd";
+export const User = "/user";
+export const UserAdd = "/userAdd";
 export const Staff = "/staffs";
 export const StaffAdd = "/staffsAdd";
 export const Login = "/login";

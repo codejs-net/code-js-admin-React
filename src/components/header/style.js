@@ -1,4 +1,6 @@
 
+import { Remove } from "@material-ui/icons";
+import { border } from "@material-ui/system";
 import { drawerWidth } from "../../themes/default";
 
 export const topAppBarStyles = theme => ({
@@ -7,15 +9,21 @@ export const topAppBarStyles = theme => ({
     transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
-    })
+    }),
+    backgroundColor:theme.palette.background.whitebg,
+    color: theme.palette.text.dark,
+    padding:"1px"
   },
   appBarShift: {
-    marginLeft: drawerWidth,
+    // marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen
     })
+  },
+  toolbar:{
+    color: theme.palette.text.dark,
   },
   menuButton: {
     marginRight: 36
@@ -37,13 +45,15 @@ export const topAppBarStyles = theme => ({
   },
   headerMenuItem: {
     "&:hover, &:focus": {
-      backgroundColor: theme.palette.background.light,
+      backgroundColor: theme.palette.background.deepPurpleBg,
       // color: "white",
     },
   },
   headerMenuButton: {
-    marginLeft: theme.spacing(2),
-    padding: theme.spacing(0.5),
+    marginLeft: theme.spacing(1),
+    // padding: theme.spacing(0.5),
+   
+    
   },
   headerMenuButtonSandwich: {
     marginLeft: 9,
@@ -53,11 +63,11 @@ export const topAppBarStyles = theme => ({
     padding: theme.spacing(0.5),
   },
   headerMenuButtonCollapse: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   headerIcon: {
     fontSize: 28,
-    color: "rgba(255, 255, 255, 0.35)",
+    color: theme.palette.text.dark,
   },
   headerIconCollapse: {
     color: "white",

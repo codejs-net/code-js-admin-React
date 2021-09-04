@@ -34,15 +34,19 @@ const theme_default= createTheme({
       tealBg: teal["A400"],
       purpleBg: purple[300],
       orangeBg: orange["A100"],
-      deepPurpleBg: deepPurple[300],
+      darkbg: "#343536",
+      whitebg: "#fff",
+      deepPurpleBg: deepPurple[700],
+      deepDarkBg:"#131314",
       footer:"#fefefe",
       thead:"rgb(196, 220, 252)",
-      selectitem:"#d3dbed"
+      selectitem:"#2d2d2e"
     },
     text: {
       white: "#fff",
       green: green[300],
       red: red["A700"],
+      dark:"#101010",
     },
   },
 });

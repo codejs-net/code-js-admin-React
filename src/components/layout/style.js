@@ -8,13 +8,13 @@ export const layoutStyles = theme => ({
   appBarSpacer: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
-    height: "100vh",
+    minHeight: "90vh",
     overflow: "auto"
   },
   container: {
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(4),
-    minHeight: "90vh",
+    minHeight: "95vh",
     display: "flex",
     flexDirection: "column",
     // width:"100%"
