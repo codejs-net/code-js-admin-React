@@ -1,8 +1,10 @@
-![alt text](https://code-js.net/template/code_js_admin_react/Code-js.png)
+## Code-js React Template with Context API
+
+![Code-js](https://user-images.githubusercontent.com/78429402/132105311-7f2c7e3a-58ea-44ce-9a00-25b7fd3bab38.png)
+
+
+This project [Code-js](https://github.com/codejs-net/code-js-admin-React).
 # Getting Started with Create React App
-
-This project [Create React App](https://github.com/codejs-net/code-js-admin-React).
-
 ## Available Scripts
 
 In the project directory, you can run:
