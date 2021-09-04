@@ -1,0 +1,9 @@
+export const Home = "/";
+export const Dashboard = "dashboard";
+export const Province = "/provinces";
+export const ProvinceAdd = "/provincesAdd";
+export const Staff = "/staffs";
+export const StaffAdd = "/staffsAdd";
+export const Login = "/login";
+export const Register = "/register";
+export const Error = "/404";
